@@ -111,7 +111,11 @@ Para poder copiar un repositorio existente se usa el comando git clone:
 
 ```bash
 $ git clone url_del_repositorio
+$ cd nombre_del_proyecto
 ```
+
+Se hace el `cd` para cambiar el directorio en el que uno está trabajando ya que el `git clone` crea un directorio con el proyecto dentro del directorio en el que uno hizo el `git clone`.
+
 # Introducción a branching
 Si uno quiere trabajar en alguna nueva opción de un proyecto o arreglar un error en el mismo y no se desea afectar la rama principal hasta que esté completo en lo que se trabajará se puede hacer branching. Cuando se hace branching uno crea una rama paralela a la rama principal, en la que uno puede trabajar y al completar las cosas combinar ambas ramas.
 
