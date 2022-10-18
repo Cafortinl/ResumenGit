@@ -14,6 +14,7 @@
 	- git remote
 	- git pull
 	- git clone
+- Resumen del uso de git en un proyecto
 - Introducción a branching
 	- git branch
 	- git checkout
@@ -115,6 +116,16 @@ $ cd nombre_del_proyecto
 ```
 
 Se hace el `cd` para cambiar el directorio en el que uno está trabajando ya que el `git clone` crea un directorio con el proyecto dentro del directorio en el que uno hizo el `git clone`.
+
+# Resumen del uso de git en un proyecto
+1. Moverse al directorio del proyecto que se desea llevar el control de versiones y correr el comando `git init`. Esto se hace sólo una vez.
+2. Crear un repositorio en github.com y copiar el url del repositorio.
+3. Correr el comando `git remote add origin url_del_repositorio_en_github`. Esto sólo se hace una vez.
+4. Para poder agregar los cambios en el proyecto se ejecuta el comando `git add .`.
+5. Para confirmar los cambios que se desean subir al repositorio remoto se corre el comando `git commit -m "comentario que se desea agregar"`.
+6. Para subir los cambios se ejecuta el comando `git push`. Si es la primera vez que se ejecuta este comando se debe ejecutar de la forma `git push -u origin master`.
+
+Cada vez que se deseen subir cambios al repositorio remoto se repiten los pasos del 4 al 5.
 
 # Introducción a branching
 Si uno quiere trabajar en alguna nueva opción de un proyecto o arreglar un error en el mismo y no se desea afectar la rama principal hasta que esté completo en lo que se trabajará se puede hacer branching. Cuando se hace branching uno crea una rama paralela a la rama principal, en la que uno puede trabajar y al completar las cosas combinar ambas ramas.
